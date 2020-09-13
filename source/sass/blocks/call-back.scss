@@ -1,0 +1,95 @@
+.call-back {
+  width: 327px;
+}
+
+.call-back p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-top: 6px;
+  margin-bottom: 19px;
+  color: $main-color;
+  text-align: center;
+}
+
+.call-back input {
+  width: 327px;
+  min-height: 48px;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 10px;
+  color: rgba(28, 28, 28, 0.5);
+  border: 1px solid #c9ccd4;
+  border-radius: 4px;
+}
+
+.call-back__send {
+  width: 326px;
+  min-height: 51px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  border-style: none;
+  border-radius: 6px;
+  background-color: $decorative-color1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5fd0c6;
+  }
+
+  &:active {
+    background-color: #10a597;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .call-back {
+    width: 321px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+  }
+
+  .call-back p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: $secondary-color;
+  }
+
+  .call-back input {
+    width: 321px;
+    padding-left: 20px;
+  }
+
+  .call-back__send {
+    width: 321px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .call-back {
+    width: $mobile-min-width;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .call-back p {
+    margin-bottom: 20px;
+  }
+
+  .call-back input {
+    width: 288px;
+    padding-left: 25px;
+  }
+
+  .call-back__send {
+    width: 286px;
+  }
+}

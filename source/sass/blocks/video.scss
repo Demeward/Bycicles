@@ -1,0 +1,159 @@
+.video {
+  width: $desktop-max-width;
+  margin: 0 auto;
+  padding-top: 121px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 107px);
+    top: 0;
+    left: 0;
+    background-color: #131314;
+    z-index: -1;
+  }
+}
+
+.video h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 19px;
+  color: $main-color;
+  text-align: center;
+}
+
+.video p {
+  width: 340px;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.video__wrapper {
+  width: 929px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+.video__play {
+  width: 65px;
+  height: 65px;
+  left: calc(50% - 32.5px);
+  top: calc(50% - 35.5px);
+  padding: 0;
+  position: absolute;
+  border-style: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+
+  &:hover svg,
+  &:focus svg {
+    fill: #5fd0c6;
+  }
+
+  &:active svg {
+    fill: #10a597;
+  }
+}
+
+.video__play svg {
+  fill: $decorative-color1;
+}
+
+@media (max-width: $tablet-max-width) {
+  .video {
+    width: $tablet-min-width;
+    padding-top: 70px;
+
+    &::before {
+      height: calc(100% - 86px);
+    }
+  }
+
+  .video h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .video p {
+    width: 429px;
+    margin-bottom: 40px;
+  }
+
+  .video__wrapper {
+    width: 503px;
+    height: 282px;
+  }
+
+  .video__wrapper img {
+    width: 503px;
+    height: 100%;
+  }
+
+  .video__play {
+    width: 90px;
+    height: 90px;
+    left: calc(50% - 45px);
+    top: calc(50% - 45px);
+  }
+
+  .video__play svg {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .video {
+    width: $mobile-min-width;
+    padding-top: 84px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    &::before {
+      height: calc(100% - 49px);
+    }
+  }
+
+  .video h2 {
+    margin-right: 10px;
+  }
+
+  .video p {
+    width: auto;
+    margin-bottom: 53px;
+  }
+
+  .video__wrapper {
+    width: 288px;
+    height: 162px;
+  }
+
+  .video__wrapper img {
+    width: 100%;
+  }
+
+  .video__play {
+    width: 65px;
+    height: 65px;
+    left: calc(50% - 31.5px);
+    top: calc(50% - 32.5px);
+  }
+
+  .video__play svg {
+    width: 65px;
+    height: 65px;
+  }
+}

@@ -1,7 +1,6 @@
 .page-header {
-  max-width: $desktop-max-width;
+  width: 100%;
   position: relative;
-  margin: 0 auto;
 
   &::before {
     position: absolute;
@@ -9,7 +8,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    // background-color: #131314;
+    background-color: #131314;
     background-image: url("../img/bg-bike-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,13 +17,13 @@
 }
 
 .page-header__wrapper {
+  max-width: $desktop-max-width;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin: 0 auto;
   padding-top: 254px;
-  padding-left: 19.44%;
-  padding-right: 19.44%;
   padding-bottom: 219px;
 }
 
@@ -66,7 +65,7 @@
 
     &::before {
       height: 48.69%;
-      // background-color: #131314;
+      background-color: #131314;
       background-size: cover;
       background-image: url("../img/bg-bike-mobile@1x.jpg");
     }

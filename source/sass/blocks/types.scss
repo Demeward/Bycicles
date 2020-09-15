@@ -1,5 +1,5 @@
 .types {
-  width: $desktop-max-width;
+  max-width: $desktop-max-width;
   margin: 0 auto;
   padding-top: 150px;
   padding-bottom: 127px;
@@ -21,12 +21,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 169px;
-  padding-right: 145px;
+  padding-left: 11.74%;
+  padding-right: 10%;
 }
 
 .types__item {
-  width: 342px;
+  width: 30.4%;
 
   &:nth-child(3n+1) {
     margin-top: 35px;
@@ -102,7 +102,7 @@
 
 @media (max-width: $tablet-max-width) {
   .types {
-    width: $tablet-min-width;
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 20px;
   }
@@ -121,10 +121,10 @@
   }
 
   .types__item {
-    width: 270px;
+    width: 35.16%;
     margin-top: 0;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 3.25%;
+    margin-right: 3.25%;
 
     &:nth-child(n) {
       margin-top: 0;
@@ -154,9 +154,8 @@
     }
   }
 
-
   .types__img-wrapper img {
-    width: 270px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
@@ -165,11 +164,15 @@
 
 @media (max-width: $mobile-max-width) {
   .types {
-    width: $mobile-min-width;
+    width: 100%;
     padding-bottom: 12px;
   }
 
   .types__item {
+    width: 84.37%;
+    margin-left: 7.81%;
+    margin-right: 7.81%;
+
     &:nth-child(n) {
       margin-bottom: 0;
     }

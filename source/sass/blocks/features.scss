@@ -1,5 +1,5 @@
 .features {
-  width: $desktop-max-width;
+  max-width: $desktop-max-width;
   margin: 0 auto;
   padding-top: 125px;
   padding-bottom: 131px;
@@ -50,7 +50,7 @@
 
 @media (max-width: $tablet-max-width) {
   .features {
-    width: $tablet-min-width;
+    width: 100%;
     padding-top: 0;
     padding-bottom: 25px;
   }
@@ -63,8 +63,8 @@
   }
 
   .features__list {
-    padding-left: 105px;
-    padding-right: 105px;
+    padding-left: 13.9%;
+    padding-right: 13.9%;
   }
 
   .features__item {
@@ -78,7 +78,7 @@
 
 @media (max-width: $mobile-max-width) {
   .features {
-    width: $mobile-min-width;
+    width: 100%;
     padding-bottom: 19px;
   }
 
@@ -87,8 +87,9 @@
   }
 
   .features__list {
-    padding-left: 29px;
-    padding-right: 28px;
+    justify-content: space-between;
+    padding-left: 9.06%;
+    padding-right: 8.75%;
   }
 
   .features__item h3 {
@@ -100,6 +101,8 @@
 
   .features__item {
     margin-bottom: 61px;
+    margin-left: auto;
+    margin-right: auto;
 
     &--first {
       margin-bottom: 37px;

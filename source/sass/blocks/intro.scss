@@ -1,5 +1,5 @@
 .intro {
-  width: 393px;
+  width: 45%;
 }
 
 .intro__logo {
@@ -24,11 +24,13 @@
 
 @media (max-width: $tablet-max-width) {
   .intro {
-    width: 525px;
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 62px;
+    padding-left: 166px;
+    padding-right: 166px;
   }
 
   .intro__logo {
@@ -48,10 +50,10 @@
 
 @media (max-width: $mobile-max-width) {
   .intro {
-    width: $mobile-min-width;
+    width: 100%;
     padding-bottom: 53px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .intro h2 {

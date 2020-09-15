@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Официальный сайт магазина 'Moon'.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Moon</title>
   <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-light.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-regular.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-semibold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-bold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/overpass-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/overpass-regular.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/overpass-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/overpass-bold.woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -51,7 +58,7 @@
 <section class="call-back">
   <h2 class="visually-hidden">Заказать обратный звонок</h2>
   <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-  <form action="" method="post" class="call-back__form">
+  <form action="https://echo.htmlacademy.ru" method="post" class="call-back__form">
     <label for="name-contact" class="visually-hidden">Введите ваше Имя</label>
     <input type="text" id="name-contact" name="name" pattern="^[А-Яа-яЁё]+$" placeholder="Введите Ваше Имя" required>
     <label for="tel-contact" class="visually-hidden">Введите ваш номер телефона</label>
@@ -148,13 +155,13 @@
       </picture>
     </div>
     <ul class="contacts__list">
-      <li class="contacts__item">
+      <li class="contacts__item contacts__item--letter">
         <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__link contacts__link--letter">
         <svg width="26" height="20">
             <use xlink:href="#sp-letter"></use>
           </svg>puteshestviemechta@gmail.ru</a>
       </li>
-      <li class="contacts__item">
+      <li class="contacts__item contacts__item--phone">
         <a href="tel:+749978468446" class="contacts__link contacts__link--phone">
         <svg width="22" height="24">
           <use xlink:href="#sp-phone"></use>

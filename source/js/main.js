@@ -21,6 +21,7 @@
       behavior: 'smooth',
       block: 'start'
     });
+    menu.classList.toggle('main-nav--closed');
   };
 
   var anchors = document.querySelectorAll('a[href*="#"]');

@@ -42,6 +42,7 @@
 .contacts__list {
   @include list-reset;
   width: 55.2%;
+  min-width: 455px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -128,6 +129,7 @@
 
   .contacts__list {
     width: 100%;
+    min-width: auto;
     margin-top: 16px;
     padding-left: 16%;
     padding-right: 11.5%;

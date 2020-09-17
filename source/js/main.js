@@ -1,9 +1,11 @@
 'use strict';
 
 (function () {
+  var header = document.querySelector('.page-header');
   var menuButton = document.querySelector('.main-nav__toggle');
   var menu = document.querySelector('.main-nav');
 
+  header.classList.remove('page-header--no-js');
   menu.classList.remove('main-nav--no-js');
   menuButton.addEventListener('click', function (evt) {
     evt.preventDefault();

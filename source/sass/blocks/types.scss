@@ -151,6 +151,7 @@
       border: 13px solid $decorative-color1;
       top: -20px;
       right: -25px;
+      z-index: 1;
     }
   }
 
@@ -187,6 +188,23 @@
   }
 
   .types__item p {
+    margin-top: 20.5px;
     margin-bottom: 42px;
+  }
+
+  .types__img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 111%;
+    margin: 0 auto;
+  }
+
+  .types__img-wrapper img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }

@@ -19,13 +19,17 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 137px;
-  padding-right: 137px;
+  padding-left: 9.51%;
+  padding-right: 9.51%;
 }
 
 .features__item {
   width: 263px;
+  margin-right: 3.4%;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
 .features__item h3 {
@@ -63,12 +67,14 @@
   }
 
   .features__list {
+    flex-wrap: wrap;
     padding-left: 13.9%;
     padding-right: 13.9%;
   }
 
   .features__item {
     margin-bottom: 23px;
+    margin-right: 0;
   }
 
   .features__item h3 {
@@ -110,6 +116,10 @@
 
     &--first h3 {
       margin-bottom: 15px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: auto;
     }
   }
 
